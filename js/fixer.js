@@ -1,6 +1,6 @@
 "use strict";
 
-var fixer = function () {
+function fixer() {
 
     /**
      * Init method
