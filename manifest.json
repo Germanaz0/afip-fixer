@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+
+  "name": "AFIP fixer",
+  "description": "Extensión para corregir errores del sitio de la AFIP",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.afip.gov.ar/*",
+        "https://*.afip.gov.ar/*",
+        "http://*.afip.gob.ar/*",
+        "https://*.afip.gob.ar/*"
+      ],
+      "js": ["js/fixer.js", "main.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
