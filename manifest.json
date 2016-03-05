@@ -2,8 +2,8 @@
   "manifest_version": 2,
 
   "name": "AFIP fixer",
-  "description": "Extensión para corregir errores del sitio de la AFIP",
-  "version": "1.0",
+  "description": "Extensión de chrome para corregir errores del sitio de la AFIP",
+  "version": "1.1",
   "icons": {
     "16": "img/icon16.png",
     "48": "img/icon48.png",
@@ -17,7 +17,7 @@
         "http://*.afip.gob.ar/*",
         "https://*.afip.gob.ar/*"
       ],
-      "js": ["js/fixer.js", "main.js"]
+      "js": ["js/overrides.js", "js/fixer.js", "main.js"]
     }
   ],
   "permissions": [

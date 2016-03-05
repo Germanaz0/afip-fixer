@@ -17,7 +17,9 @@ function fixer() {
         var script = document.createElement("script");
 
         // Add script content
-        script.innerHTML = this.getNavigateContentScript();
+        script.innerHTML = this.getNavigateContentFunction();
+        script.innerHTML += '; \n';
+        script.innerHTML += this.getObtenerParamFunction();
 
         // Append
         document.body.appendChild(script);
@@ -27,8 +29,13 @@ function fixer() {
      * Get required script to fix navigate event
      * @returns {string}
      */
-    this.getNavigateContentScript = function() {
+    this.getNavigateContentFunction = function () {
         return "window.navigate = function(url) { location.href = url }";
     };
+
+    this.getObtenerParamFunction = function () {
+        return obtenerParam.toString();
+    }
+
 
 };
