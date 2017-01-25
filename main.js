@@ -2,7 +2,7 @@
 
 /**
  * AFIP FIXER
- * @author Bortoli German <german@groween.com>
+ * @author Bortoli German <germanazo@gmail.com>
  */
 
 var oFixer = new fixer();
